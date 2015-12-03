@@ -11,7 +11,7 @@ PImage bg2;
 PImage hp;
 
 
-float bgX; 
+float m; 
 PFont board; 
 int scoreNum = 0; 
  
@@ -135,12 +135,12 @@ void draw() {
    break; 
      case Game_RUN: 
 
-      image (bg2, bgX, 0); 
-      image (bg1, bgX-640, 0); 
-      image (bg2, bgX-1280, 0);  
+      image (bg2, m, 0); 
+      image (bg1, m-640, 0); 
+      image (bg2, m-1280, 0);  
        
-      bgX += 1; 
-      bgX %= 1280; 
+      m += 1; 
+      m %= 1280; 
        
 
       image (treasure, treasureX, treasureY);     
